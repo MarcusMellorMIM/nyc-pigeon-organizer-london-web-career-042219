@@ -15,7 +15,7 @@ def nyc_pigeon_organizer(data)
         if !new_data[name][pigeon_key]
           new_data[name][pigeon_key]=[]
         end 
-        new_data[name][pigeon_key]<<attr_key
+        new_data[name][pigeon_key]<<attr_key.to_s
       end
 
     end
