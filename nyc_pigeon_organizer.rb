@@ -10,8 +10,8 @@ def nyc_pigeon_organizer(data)
       attr_value.each do | name |
         if !new_data[name]
          new_data[name]={}
-        end        
-        new_data[name][pigeon_key]=attr_key
+        end
+        new_data[name][pigeon_key]<<attr_key
       end
 
     end
