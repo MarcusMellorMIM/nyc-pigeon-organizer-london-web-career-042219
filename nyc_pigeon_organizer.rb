@@ -11,6 +11,10 @@ def nyc_pigeon_organizer(data)
         if !new_data[name]
          new_data[name]={}
         end
+        
+        if !new_data[name][pigeon_key]
+          new_data[name][pigeon_key]=[]
+        end 
         new_data[name][pigeon_key]<<attr_key
       end
 
